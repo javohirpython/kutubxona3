@@ -16,10 +16,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["api.kutubxona3.librarynetbuilder.uz", "127.0.0.1"]
 CORS_ORIGIN_ALLOW_ALL = True
-CSRF_TRUSTED_ORIGINS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://kutubxona3.librarynetbuilder.uz']
 CSRF_COOKIE_SECURE = False
 
-CORS_ALLOWED_ORIGINS = ["*"]
+CORS_ALLOWED_ORIGINS = ["https://kutubxona3.librarynetbuilder.uz"]
 
 CORS_ALLOW_HEADERS = [
     'accept',
