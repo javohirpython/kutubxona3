@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-f4sdqtghx0v9xr-_q&cm9t3-(e2gk#j7hri-)whj@i7(3o6b-m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["api.kutubxona3.librarynetbuilder.uz", "127.0.0.1"]
+ALLOWED_HOSTS = ["api.kutubxona3.librarynetbuilder.uz", "127.0.0.1", ".vercel.app"]
 CORS_ORIGIN_ALLOW_ALL = True
 CSRF_TRUSTED_ORIGINS = ['https://kutubxona3.librarynetbuilder.uz']
 CSRF_COOKIE_SECURE = False
