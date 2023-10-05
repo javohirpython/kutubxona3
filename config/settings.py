@@ -14,12 +14,12 @@ SECRET_KEY = 'django-insecure-f4sdqtghx0v9xr-_q&cm9t3-(e2gk#j7hri-)whj@i7(3o6b-m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["api.kutubxona3.librarynetbuilder.uz", "127.0.0.1"]
+ALLOWED_HOSTS = ["*"]
 CORS_ORIGIN_ALLOW_ALL = True
-CSRF_TRUSTED_ORIGINS = ['https://kutubxona3.librarynetbuilder.uz']
+CSRF_TRUSTED_ORIGINS = ['*']
 CSRF_COOKIE_SECURE = False
 
-CORS_ALLOWED_ORIGINS = ["https://kutubxona3.librarynetbuilder.uz"]
+CORS_ALLOWED_ORIGINS = ["*"]
 
 CORS_ALLOW_HEADERS = [
     'accept',
@@ -86,23 +86,23 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'kutubxona3', 
-        'USER': 'javohir',
-        'PASSWORD': 'Javohir2003',
-        'HOST': '127.0.0.1', 
-        'PORT': '5432',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'kutubxona3', 
+#         'USER': 'javohir',
+#         'PASSWORD': 'Javohir2003',
+#         'HOST': '127.0.0.1', 
+#         'PORT': '5432',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
